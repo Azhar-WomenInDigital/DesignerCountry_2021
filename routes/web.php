@@ -63,6 +63,7 @@ Route::group(['as'=>'admin.','prefix' => 'admin', 'namespace'=>'admin','middlewa
    Route::resource('freetrial','FreeTrialController');
    Route::resource('subscribers','SubscribersController');
    Route::resource('getquote','GetQuoteController');
+   Route::resource('registeredpeople','RegisterController');
 });
 //Author Routes
 Route::group(['as'=>'author.','prefix' => 'author', 'namespace'=>'authorprofile','middleware'=>['auth','author']], function () {

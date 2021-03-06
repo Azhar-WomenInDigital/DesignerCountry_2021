@@ -7,12 +7,17 @@
     </div>
   </div>
   <ul class="app-menu">
-    
     @if(Request::is('admin*'))
     <li>
       <a class="{{ Request::is('admin/dashboard') ? 'active' : '' }} app-menu__item" href="{{ route('admin.dashboard') }}">
         <i class="app-menu__icon fas fa-tachometer-alt"></i>
         <span class="app-menu__label">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a class="{{ Request::is('admin/registeredpeople') ? 'active' : '' }} app-menu__item" href="{{ route('admin.registeredpeople.index') }}">
+        <i class="app-menu__icon far fa-registered"></i>
+        <span class="app-menu__label">Register</span>
       </a>
     </li>
     <li>
