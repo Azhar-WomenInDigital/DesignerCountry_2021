@@ -5,7 +5,6 @@ use App\Models\GetQuote;
 use App\Mail\GetQuoteMail;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Support\Facades\Mail;
 
 class GetQuoteController extends Controller
@@ -18,7 +17,7 @@ class GetQuoteController extends Controller
     {
         $this->validate($request,[
             'name' => 'required',
-            'email' => 'required',
+            'email' => 'required|string|email|max:255|email_checker',
             'quantity' => 'required',
             'details_instraction' => 'required',
             'sellection' => 'required',
@@ -27,9 +26,9 @@ class GetQuoteController extends Controller
         if($request->hasAny(['clipping_path','multi_clipping_path','image_masking','photo_retouching','ghost_mannequin','dropdown_shadow','reflection_shadow','color_variants','vactor_convartion','brightness_enhencement','ecomerce_image_editing','image_restarted']))
         {
             $data = GetQuote::create($request->all());
-            Mail::to('azharraihan6969@gmail.com')->send(new GetQuoteMail($data));
+            // Mail::to('azharraihan6969@gmail.com')->send(new GetQuoteMail($data));
             session(['name' => $data->name]);
-            Toastr::success('Your Data Successfully Sent','Success');
+            notify()->success("Success","Get Quote Succefull");
             return redirect()->route('get.quote.upload');
         }else{
             $data = [
@@ -39,7 +38,7 @@ class GetQuoteController extends Controller
                 'quantity' => $request->quantity,
                 'details_instraction' => $request->details_instraction
             ];
-            Toastr::warning('Please Select Atleast One Service','warning');
+            notify()->warning("Please Select Atleast One Service");
             return redirect()->back()->with($data);
         }
     }

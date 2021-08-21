@@ -1,5 +1,10 @@
 @extends ('layouts.frontend.master')
-@section ('page-title', 'Photo Editing Studio Provider Designer Country || About Designer Country || Designer Country')
+@section ('page-title', 'Photo Editing Studio Provider Designer Country | About Designer Country')
+@push('og-graph-tag')
+<meta property="og:title" content="Photo Editing Studio Provider Designer Country | About Designer Country" />
+<meta property="og:description" content="Photo Editing Studio Provider Designer Country | About Designer Country" />
+<meta property="og:image" content="https://designercountry.com/assets/frontend/img/about/team.png" />
+@endpush
 @push('page-css')
 <style type="text/css">
 </style>
@@ -24,24 +29,24 @@
       <div class="col-lg-6 py-4">
         <div class="member">
           <div class="pic">
-            <img src="{{ asset('assets/frontend/img/about/nayeem_khan_ceo.png') }}" class="img-fluid" alt="nayeem" loading="lazy">
+            <img src="{{ asset('assets/frontend/img/about/mostafizar_co_founder.png') }}" class="img-fluid" alt="mostafiz" loading="lazy">
           </div>
           <div class="member-info">
-            <h4>Nayeem Khan</h4>
+            <h4>Mustafigur Rahman</h4>
             <span><strong>President and CEO, Designer Country</strong></span>
             <p>I am honored as chief executive of Designer Country. As a chief executive determined to lead Designer Country to new heights, I am keenly aware of the immense responsibilities on my shoulders.</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="row"> 
-      <div class="col-lg-6  mt-4">
+    <div class="row">
+      <div class="col-lg-6 mt-4">
         <div class="member">
           <div class="pic">
-            <img src="{{ asset('assets/frontend/img/about/mostafizar_co_founder.png') }}" class="img-fluid" alt="mostafiz" loading="lazy">
+            <img src="{{ asset('assets/frontend/img/about/Raziur_co_founde.png') }}" class="img-fluid" alt="Raziur" loading="lazy">
           </div>
           <div class="member-info">
-            <h4>Mustafigur Rahman</h4>
+            <h4>Raziur Rahman</h4>
             <span><strong>Co-Founder</strong></span>
             <p>As a co-founder, I think the goal of a designer is to listen, observe, understand, sympathize, empathize, synthesize, and glean insights that enable him or her to make the invisible visible.</p>
           </div>
@@ -50,18 +55,8 @@
       <div class="col-lg-6 mt-4">
         <div class="member">
           <div class="pic">
-            <img src="{{ asset('assets/frontend/img/about/azhar_raihan.png') }}" class="img-fluid" alt="azhar_raihan" loading="lazy">
+            <img src="{{ asset('assets/frontend/img/about/joynal_abedin_human.png') }}" class="img-fluid" alt="joynal" loading="lazy">
           </div>
-          <div class="member-info">
-            <h4>Azhar Raihan</h4>
-            <span><strong>Engineer</strong></span>
-            <p>The trouble with programmers is that you can never tell what a programmer is doing until it’s too late. A good programmer is someone who always looks both ways before crossing a one-way street.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6  mt-4">
-        <div class="member">
-          <div class="pic"><img src="{{ asset('assets/frontend/img/about/joynal_abedin_human.png') }}" class="img-fluid" alt="joynal" loading="lazy"></div>
           <div class="member-info">
             <h4>Joynal Abedin</h4>
             <span><strong>Human Resource</strong></span>
@@ -72,31 +67,19 @@
       <div class="col-lg-6  mt-4">
         <div class="member">
           <div class="pic">
-            <img src="{{ asset('assets/frontend/img/about/yousuf_zaman.png') }}" class="img-fluid" alt="yousuf" loading="lazy">
+            <img src="{{ asset('assets/frontend/img/about/azhar-raihan_.png') }}" class="img-fluid" alt="ahmed-juned" loading="lazy">
           </div>
           <div class="member-info">
-            <h4>Yousuf Zaman</h4>
-            <span><strong>Senior Customer Support</strong></span>
-            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+            <h4>Azhar Raihan</h4>
+            <span><strong>Engineer</strong></span>
+            <p>The trouble with programmers is that you can never tell what a programmer is doing until it’s too late. A good programmer is someone who always looks both ways before crossing a one-way street.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-6  mt-4">
         <div class="member">
           <div class="pic">
-            <img src="{{ asset('assets/frontend/img/about/nishat_salsabil.png') }}" class="img-fluid" alt="nisat" loading="lazy">
-          </div>
-          <div class="member-info">
-            <h4>Nishat Salsabil</h4>
-            <span><strong>Senior Customer Support</strong></span>
-            <p>We see our customers as invited guests to a party, and we are the hosts. It’s our job to make the customer experience a little bit better.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6  mt-4">
-        <div class="member">
-          <div class="pic">
-            <img src="{{ asset('assets/frontend/img/about/sadirul_amin_shipon.png') }}" class="img-fluid" alt="sadirul-alam" loading="lazy">
+            <img src="{{ asset('assets/frontend/img/about/sadirul_amin_shipon.png') }}" class="img-fluid" alt="nisat" loading="lazy">
           </div>
           <div class="member-info">
             <h4>Sadirul Amin Shipon</h4>
@@ -108,25 +91,28 @@
       <div class="col-lg-6  mt-4">
         <div class="member">
           <div class="pic">
-            <img src="{{ asset('assets/frontend/img/about/raziur_rahman.png') }}" class="img-fluid" alt="raziru_rahman" loading="lazy">
+            <img src="{{ asset('assets/frontend/img/about/nishat_salsabil.png') }}" class="img-fluid" alt="sadirul-alam" loading="lazy">
           </div>
           <div class="member-info">
-            <h4>Raziur Rahman</h4>
-            <span><strong>Customer Support</strong></span>
-            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+            <h4>Nishat Salsabil</h4>
+            <span><strong>Senior Customer Support</strong></span>
+            <p>We see our customers as invited guests to a party, and we are the hosts. It’s our job to make the customer experience a little bit better.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-6  mt-4">
         <div class="member">
           <div class="pic">
-            <img src="{{ asset('assets/frontend/img/about/ahmed_juned.png') }}" class="img-fluid" alt="ahmed-juned" loading="lazy">
+            <img src="{{ asset('assets/frontend/img/about/ahmed_juned.png') }}" class="img-fluid" alt="azhar_raihan" loading="lazy">
           </div>
           <div class="member-info">
             <h4>Ahmed Juned</h4>
-            <span><strong>Customer Support</strong></span>
+            <span><strong>Senior Customer Support</strong></span>
             <p>Every company’s greatest assets are its customers because without customers there is no company.</p>
           </div>
+        </div>
+        
+         </div>
         </div>
       </div>
     </div>

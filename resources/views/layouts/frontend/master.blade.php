@@ -22,11 +22,7 @@ content="DC- Perfect High-quality, Clipping Path, and Image Editing services, Ba
 <!--**  Open Graph Meta **-->
 <meta property="og:locale" content="en-US">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Designer Country">
-<meta property="og:title" content="Designer Country Service Provider | Image &amp; Photo Editing">
-<meta property="og:url" content="http://www.designercountry.com">
-<meta property="og:description"
-content="DC- Perfect High-quality, professional clipping paths and image-editing services, Image masking, color-correction,Photo Retouching, Removal Background, Shadow Service. Get a quote for your next project.">
+@stack('og-graph-tag')
 <!--======== Meta Seo End =======-->
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -53,8 +49,8 @@ content="DC- Perfect High-quality, professional clipping paths and image-editing
 <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" media="all">
 <link href="{{ asset('assets/frontend/css/responsive.css') }}" rel="stylesheet" media="all">
 @stack('page-css')
-<!-- Toastr::css -->
-<link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
+<!-- Lara IziToast -->
+<link href="{{ asset('css/iziToast.css') }}" rel="stylesheet">
 </head>
 <body>
 <!-- ======= Header ======= -->
@@ -67,7 +63,11 @@ content="DC- Perfect High-quality, professional clipping paths and image-editing
 <!-- ======= Footer ======= -->
 @include('layouts.frontend.partials.footer')
 <!-- End Footer -->
-<a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+<!--<a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>-->
+<a href="https://api.whatsapp.com/send?phone=+8801914106753&text=Hello! How can I help you? Could you please leave me your email address here just in case we are disconnected? Thanks. Our email is: designercountry@gmail.com" class="float" target="_blank">
+<i class="fab fa-whatsapp my-float"></i>
+</a>
+</a>
 <!-- Vendor JS Files -->
 <script src="{{ asset('assets/frontend/vendor/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -77,22 +77,22 @@ content="DC- Perfect High-quality, professional clipping paths and image-editing
 <script src="{{ asset('assets/frontend/vendor/venobox/venobox.min.js') }}"></script>
 <script src="{{ asset('assets/frontend/vendor/owl.carousel/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('assets/frontend/vendor/aos/aos.js') }}"></script>
+<!-- Lara IziToast Js -->
+<script src="{{ asset('js/iziToast.js') }}"></script>
 @stack('page-js')
 <!-- Template Main JS File -->
 <script src="{{ asset('assets/frontend/js/main.js') }}"></script>
 <!-- Yeild Js -->
-<!-- Toastr::Js -->
-<script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
-{!! Toastr::message() !!}
+@include('vendor.lara-izitoast.toast')
 <script>
-  @if($errors->any())
-    @foreach($errors->all() as $error)
-      toastr.error('{{ $error }}', 'Error',{
-        closeButton:true,
-        progressBar:true,
-      });
-    @endforeach
-  @endif
+    @if($errors->any())
+      @foreach($errors->all() as $error)
+        iziToast.error('{{ $error }}', 'Error',{
+            closeButton:true,
+            progressBar:true,
+        });
+      @endforeach
+    @endif
 </script>
 </body>
 </html>

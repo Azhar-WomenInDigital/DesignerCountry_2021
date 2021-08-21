@@ -20,7 +20,7 @@
       <h5 class="text-center m-0 p-0">Subscriber Email</h5>
     </div>
     <ul class="list-group list-group-flush" style="height: 150px">
-      <li class="list-group-item">{{ $data->email }}</li>
+      <li class="list-group-item">{{ $data->s_email }}</li>
       <li class="list-group-item">This email has subscribed to Designer Country :)</li>
   </div>
 </div>

@@ -1,5 +1,10 @@
 @extends ('layouts.frontend.master')
 @section ('page-title', 'Payment-Method')
+@push('og-graph-tag')
+<meta property="og:title" content="Designer Country | Payment Method" />
+<meta property="og:description" content="Payment-Method" />
+<meta property="og:image" content="http://designercountry.com/assets/frontend/img/payment_method/Payment_Method_Designer_Country.png" />
+@endpush
 @push('page-css')
 <style type="text/css">
 </style>

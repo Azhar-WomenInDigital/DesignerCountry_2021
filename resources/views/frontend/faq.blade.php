@@ -1,5 +1,10 @@
 @extends ('layouts.frontend.master')
 @section ('page-title', 'Photoshop Photo Retouching Services')
+@push('og-graph-tag')
+<meta property="og:title" content="Designer Country | FAQ" />
+<meta property="og:description" content="Designer Country | Question And Answer" />
+<meta property="og:image" content="https://designercountry.com/assets/frontend/img/hero-img_1.png" />
+@endpush
 @push('page-css')
 <style type="text/css">
 </style>
@@ -78,7 +83,7 @@
                     </div>
                 </li>
                 <li>
-                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-9" class="collapsed">Do you accept monthly work ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-9" class="collapsed">Do you accept monthly work?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                     <div id="faq-list-9" class="collapse" data-bs-parent=".faq-list">
                     <p>
                         We say " of course" here you may receive service for monthly plan based & also pay us for monthly system.
@@ -86,10 +91,10 @@
                     </div>
                 </li>
                 <li>
-                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-10" class="collapsed">Do we use your some employees permanently ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-10" class="collapsed">Do we use your some employees permanently?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                     <div id="faq-list-10" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                        Of course you may use but here you have to make a payment to us as service charge.
+                        Of course, you may use it but here you have to make a payment to us as a service charge.
                     </p>
                     </div>
                 </li>

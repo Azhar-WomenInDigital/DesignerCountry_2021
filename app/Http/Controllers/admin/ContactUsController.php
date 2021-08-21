@@ -5,7 +5,6 @@ namespace App\Http\Controllers\admin;
 use App\Models\ContactUs;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Brian2694\Toastr\Facades\Toastr;
 
 class ContactUsController extends Controller
 {
@@ -86,7 +85,7 @@ class ContactUsController extends Controller
     {
         $contact = ContactUs::find($id);
         $contact->delete();
-        Toastr::success('Data has been successfully Deleted','Success');
+        notify()->success("Delete","Contact Successfully Deleted");
         return redirect()->back();
 
     }

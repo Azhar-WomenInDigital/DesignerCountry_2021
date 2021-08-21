@@ -4,18 +4,18 @@ namespace App\Http\Controllers\frontend;
 use App\Models\Subscriber;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Brian2694\Toastr\Facades\Toastr;
 
 class SubscriberController extends Controller
 {
     public function subscriberStore(Request $request){
         $this->validate($request,[
-            'email' => 'required|unique:subscribers,email',
+            's_email' => 'required|string|email|max:255|unique:subscribers|email_checker',
+
         ]);
         $subscribe = new Subscriber();
-        $subscribe->email = $request->email;
+        $subscribe->s_email = $request->s_email;
         $subscribe->save();
-        Toastr::success("You've successfully subscribed", 'Success');
+        notify()->success("Subscribe","Subscribe Successful");
         return redirect()->back();
     }
 }

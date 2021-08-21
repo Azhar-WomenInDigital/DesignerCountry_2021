@@ -5,7 +5,6 @@ namespace App\Http\Controllers\admin;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Brian2694\Toastr\Facades\Toastr;
 
 class RegisterController extends Controller
 {
@@ -85,7 +84,7 @@ class RegisterController extends Controller
     public function destroy($id)
     {
         User::find($id)->delete();
-        Toastr::success('Register has been successfully deleted','Delete Success');
+        notify()->success("Delete","Register Successfully Deleted");
         return redirect()->back();
     }
 }

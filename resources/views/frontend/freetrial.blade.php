@@ -1,5 +1,10 @@
 @extends ('layouts.frontend.master')
-@section ('page-title', 'Free Trial || Professional Image Editing || Image Editing Free')
+@section ('page-title', 'Free Trial | Professional Image Editing | Image Editing Free')
+@push('og-graph-tag')
+<meta property="og:title" content="Designer Country | Image Editing Free" />
+<meta property="og:description" content="Free Trial | Professional Image Editing | Image Editing Free" />
+<meta property="og:image" content="https://designercountry.com/assets/frontend/img/hero-img_1.png" />
+@endpush
 @push('page-css')
 <style type="text/css">
 </style>
@@ -49,7 +54,12 @@
             <div class="col-sm-6 col-md-4 pt-col-3 pt-sm-3 pt-md-4">
               <div class="email-section form-group">
                 <label for="email" class="pb-1 pb-sm-2 pb-md-3 mobile-pt-10"><strong>Email Address:</strong></label>
-                <input type="email" class="form-control" id="email" name="email">
+                <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email">
+                @error('email')
+                <span class="invalid-feedback" role="alert">
+                  <strong>{{ $message }}</strong>
+                </span>
+                @enderror
               </div>
             </div>
           </div>

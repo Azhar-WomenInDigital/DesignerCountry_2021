@@ -4,7 +4,6 @@ namespace App\Http\Controllers\admin;
 use App\Models\FreeTrial;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Support\Facades\File;
 
 class FreeTrialController extends Controller
@@ -86,7 +85,7 @@ class FreeTrialController extends Controller
     {
         $data = FreeTrial::find($id);
         $data->delete();
-        Toastr::success('Data Successfully Deleted :)','Success');
+        notify()->success("Delete","Free Trail Successfully Deleted");
         return redirect()->back();
     }
 }

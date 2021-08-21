@@ -1,5 +1,10 @@
 @extends ('layouts.frontend.master')
 @section ('paege-title', 'Get-Quote-Upload')
+@push('og-graph-tag')
+<meta property="og:title" content="Designer Country | Get-Quote-Upload" />
+<meta property="og:description" content="Photo Editing | Get-Quote-Upload" />
+<meta property="og:image" content="https://designercountry.com/assets/frontend/img/hero-img_1.png" />
+@endpush
 @push ('page-css')
 <style type="text/css">
 </style>

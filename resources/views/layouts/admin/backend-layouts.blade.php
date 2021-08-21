@@ -16,8 +16,8 @@
   <!--==** DataTable CSS **==-->
   <link rel="stylesheet" type="text/css" href="{{asset('assets/backend/css/dataTables.bootstrap4.min.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('assets/backend/css/main.css')}}" />
-  <!-- Toastr::css -->
-  <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
+  <!-- Lara IziToast -->
+  <link href="{{ asset('css/iziToast.css') }}" rel="stylesheet">
   <!--==** Logo **==-->
   @stack('page-css')
   <style>
@@ -45,19 +45,19 @@
 <!-- Page specific javascripts-->
 <!--==** Ajax CDN Link **==-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!--==** Jquery Link **==-->
+<!-- Lara IziToast Js -->
+<script src="{{ asset('js/iziToast.js') }}"></script>
 @stack('page-js')
-<!-- Toastr::Js -->
-<script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
-{!! Toastr::message() !!}
+<!-- Lara iziToast -->
+@include('vendor.lara-izitoast.toast')
 <script>
     @if($errors->any())
-    @foreach($errors->all() as $error)
-    toastr.error('{{ $error }}', 'Error',{
-        closeButton:true,
-        progressBar:true,
-    });
-    @endforeach
+      @foreach($errors->all() as $error)
+        iziToast.error('{{ $error }}', 'Error',{
+            closeButton:true,
+            progressBar:true,
+        });
+      @endforeach
     @endif
 </script>
 </body>

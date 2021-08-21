@@ -88,8 +88,8 @@
       <!-- Photo Grid -->
       <div class="row2"> 
         <div class="column2">
-          <img src="{{ asset('assets/frontend/img/photo-gallery/wedding.jpg') }}" alt="employee" loading="lazy" style="width:100%">
-          <img src="{{ asset('assets/frontend/img/photo-gallery/rocks.jpg') }}" alt="employee" loading="lazy" style="width:100%">
+          <img src="{{ asset('assets/frontend/img/photo-gallery/Sadirul Amin Shipon_0.jpg') }}" alt="employee" loading="lazy" style="width:100%">
+          <img src="{{ asset('assets/frontend/img/photo-gallery/Tarequl-Islam_0.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/falls2.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/paris.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/nature.jpg') }}" alt="employee" loading="lazy" style="width:100%">
@@ -97,16 +97,16 @@
           <img src="{{ asset('assets/frontend/img/photo-gallery/paris.jpg') }}" alt="employee" loading="lazy" style="width:100%">
         </div>
         <div class="column2">
-          <img src="{{ asset('assets/frontend/img/photo-gallery/underwater.jpg') }}" alt="employee" loading="lazy" style="width:100%">
-          <img src="{{ asset('assets/frontend/img/photo-gallery/ocean.jpg') }}"  alt="employee" loading="lazy" style="width:100%">
+          <img src="{{ asset('assets/frontend/img/photo-gallery/Jaminul Islam_0.jpg') }}" alt="employee" loading="lazy" style="width:100%">
+          <img src="{{ asset('assets/frontend/img/photo-gallery/Mizanur-Rahman.jpg') }}"  alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/wedding.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/mountainskies.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/rocks.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/underwater.jpg') }}" alt="employee" loading="lazy" style="width:100%"> 
         </div>  
         <div class="column2">
-          <img src="{{ asset('assets/frontend/img/photo-gallery/wedding.jpg') }}" alt="employee" loading="lazy" style="width:100%">
-          <img src="{{ asset('assets/frontend/img/photo-gallery/rocks.jpg') }}" alt="employee" loading="lazy" style="width:100%">
+          <img src="{{ asset('assets/frontend/img/photo-gallery/Azhar Raihan_0.jpg') }}" alt="employee" loading="lazy" style="width:100%">
+          <img src="{{ asset('assets/frontend/img/photo-gallery/Ahmed-Juned.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/falls2.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/paris.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/nature.jpg') }}" alt="employee" loading="lazy" style="width:100%">
@@ -114,8 +114,8 @@
           <img src="{{ asset('assets/frontend/img/photo-gallery/paris.jpg') }}" alt="employee" loading="lazy" style="width:100%">
         </div>
         <div class="column2">
-          <img src="{{ asset('assets/frontend/img/photo-gallery/underwater.jpg') }}" alt="employee" loading="lazy" style="width:100%">
-          <img src="{{ asset('assets/frontend/img/photo-gallery/ocean.jpg') }}" alt="employee" loading="lazy" style="width:100%">
+          <img src="{{ asset('assets/frontend/img/photo-gallery/Mustafigur Rahman_0.jpg') }}" alt="employee" loading="lazy" style="width:100%">
+          <img src="{{ asset('assets/frontend/img/photo-gallery/Aminul_Islam.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/wedding.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/mountainskies.jpg') }}" alt="employee" loading="lazy" style="width:100%">
           <img src="{{ asset('assets/frontend/img/photo-gallery/rocks.jpg') }}" alt="employee" loading="lazy" style="width:100%">

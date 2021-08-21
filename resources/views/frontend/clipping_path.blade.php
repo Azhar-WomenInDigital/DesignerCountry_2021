@@ -1,5 +1,10 @@
 @extends ('layouts.frontend.master')
 @section ('page-title', 'Clipping Path Cut Out | Ecommerce Product Editing Services')
+@push('og-graph-tag')
+<meta property="og:title" content="Designer Country | Clipping Path Cut Out" />
+<meta property="og:description" content="Clipping Path Cut Out | Ecommerce Product Editing Services" />
+<meta property="og:image" content="https://designercountry.com/assets/frontend/img/Service_All/Clipping_Path_Service/Clipping_Path_Service.png" />
+@endpush
 @push ('page-css')
 <style type="text/css">
 </style>
@@ -14,7 +19,7 @@
                 <img src="{{asset('assets/frontend/img/Service_All/Clipping_Path_Service/Clipping_Path_Service.png')}}"
                     alt="Clipping_Path_Service" class="img-fluid" loading="lazy" style="width: 100%;">
                 <div class="custom_button py-col-2 py-sm-3 py-md-4 py-lg-5 py-xl-5 text-center">
-                    <a href="{{route('get.quote')}}" class="btn btn text-uppercase" rel="preload">compleate my quote</a>
+                    <a href="{{route('get.quote')}}" class="btn btn text-uppercase" rel="preload">complete my quote</a>
                 </div>
             </div>
         </div>

@@ -1,5 +1,10 @@
 @extends ('layouts.frontend.master')
 @section ('page-title', 'Photo Transparent Background | Photo Cut Out Services | Background Removal | Image Editing')
+@push('og-graph-tag')
+<meta property="og:title" content="Designer Country | Background-Removal" />
+<meta property="og:description" content="Photo Transparent Background | Photo Cut Out Services | Background Removal | Image Editing" />
+<meta property="og:image" content="https://designercountry.com/assets/frontend/img/Service_All/Background_Remove_Service/Background_Remove_Service.png" />
+@endpush
 @push('page-css')
 <style type="text/css">
 </style> 
@@ -14,7 +19,7 @@
                 <img src="{{asset('assets/frontend/img/Service_All/Background_Remove_Service/Background_Remove_Service.png')}}"
                     alt="Background_Removal_Service" class="img-fluid" style="width:100%">
                 <div class="custom_button py-col-2 py-sm-3 py-md-4 py-lg-5 py-xl-5 text-center">
-                    <a href="{{route('get.quote')}}" class="btn btn text-uppercase" rel="preload">compleate my quote</a>
+                    <a href="{{route('get.quote')}}" class="btn btn text-uppercase" rel="preload">complete my quote</a>
                 </div>
             </div>
         </div>

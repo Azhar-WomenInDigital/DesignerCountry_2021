@@ -7,8 +7,13 @@
           <p>Get our latest updates, service details, free trial offer info, and all blog posts in your email.</p>
           <form action="{{ route('subscriber') }}" method="post">
             @csrf
-            <div class="input-group">
-              <input type="email" class="form-control" placeholder="example@gmail.com" aria-label="example@gmail.com" name="email">
+            <div class="input-group form-group">
+              <input type="email" class="form-control @error ('s_email') is-invalid @enderror" placeholder="example@gmail.com" aria-label="example@gmail.com" name="s_email" required>
+              @error('s_email')
+              <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+              </span>
+              @enderror
               <button class="btn btn-subscribe" type="submit">Subscribe</button>
             </div>
           </form>
@@ -24,12 +29,11 @@
             <span style="border-bottom: 1px solid #1ae6df; padding-bottom: 8px;">Information</span>
           </h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="{{route('blog')}}">Blog</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('faq') }}">Faq</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('sample') }}">Samples</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('terms.and.conditions') }}">Terms & Conditions</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('privacy.and.policy') }}">Privacy & Policy</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('refund.policy') }}">Refunf Policy</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('refund.policy') }}">Refund Policy</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-6 footer-links">
@@ -51,7 +55,7 @@
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('natural.shadow') }}">Natural Shadow</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('photo.retouching') }}">Photo Retouching</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('ghosht.manneuquin') }}">Ghost Mannequin</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('photo.retouching') }}">Photo Editing</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('product.photo.editing') }}">Photo Editing</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('color.correction') }}">Color Correction</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="{{ route('vector.conversion') }}">Vector Conversion</a></li>
           </ul>
@@ -70,16 +74,16 @@
       </div> 
       <hr>
       <div class="dc-social-media mobile-pb-20">
-        <a href="https://twitter.com/designercounty" target="blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/designer-country/" target="blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
         <a href="https://www.facebook.com/designercountry" target="blank">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://www.instagram.com/designercountry/" target="blank">
+        <a href="https://twitter.com/designercounty" target="blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/designer-country" target="blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/designercountry" target="blank">
           <i class="fab fa-instagram"></i>
         </a>
       </div>
@@ -87,14 +91,9 @@
   </div>
   <div class="container mobile-py-20">
     <div class="row py-sm-4">
-      <div class="col-sm-7">
-        <div class="copyright text-light">
+      <div class="col-12">
+        <div class="copyright text-light text-center">
           &copy; Copyright <strong><span>Designer Country</span></strong>. All Rights Reserved
-        </div>
-      </div>
-      <div class="col-sm-5 mobile-pt-10">
-        <div class="credits text-light">
-          Designed & Develop by <a href="https://www.facebook.com/AzharRaihan6969/" target="blank">Azhar Raihan</a>
         </div>
       </div>
     </div>

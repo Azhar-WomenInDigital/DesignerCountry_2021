@@ -32,7 +32,7 @@
               @foreach ($datas as $key=>$data)
                 <tr>
                   <td>{{ $key + 1}}</td>
-                  <td>{{ $data->email}}</td>
+                  <td>{{ $data->s_email}}</td>
                   <td>{{ $data->created_at}}</td>
                   <td class="d-flex">
                       <a class="btn btn-info btn-sm" href="{{ route('admin.subscribers.show', $data->id) }}"><i class="fa fa-eye"></i></a>

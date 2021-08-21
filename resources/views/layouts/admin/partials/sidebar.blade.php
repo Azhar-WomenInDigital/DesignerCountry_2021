@@ -7,6 +7,7 @@
     </div>
   </div>
   <ul class="app-menu">
+    
     @if(Request::is('admin*'))
     <li>
       <a class="{{ Request::is('admin/dashboard') ? 'active' : '' }} app-menu__item" href="{{ route('admin.dashboard') }}">
@@ -14,7 +15,7 @@
         <span class="app-menu__label">Dashboard</span>
       </a>
     </li>
-    <li>
+        <li>
       <a class="{{ Request::is('admin/registeredpeople') ? 'active' : '' }} app-menu__item" href="{{ route('admin.registeredpeople.index') }}">
         <i class="app-menu__icon far fa-registered"></i>
         <span class="app-menu__label">Register</span>
@@ -42,12 +43,6 @@
       <a class="{{ Request::is('admin/subscribers') ? 'active' : '' }} app-menu__item" href="{{ route('admin.subscribers.index') }}">
         <i class="app-menu__icon fas fa-mail-bulk"></i>
         <span class="app-menu__label">Subscribers</span>
-      </a>
-    </li>
-    <li>
-      <a class="{{ Request::is('admin/create-blog') ? 'active' : '' }} app-menu__item" href="{{ route('admin.create.blog') }}">
-        <i class="app-menu__icon fab fa fa-blog"></i>
-        <span class="app-menu__label">Create Blog</span>
       </a>
     </li>
     @endif

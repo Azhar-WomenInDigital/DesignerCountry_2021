@@ -5,7 +5,6 @@ namespace App\Http\Controllers\admin;
 use App\Models\GetQuote;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Brian2694\Toastr\Facades\Toastr;
 
 class GetQuoteController extends Controller
 {
@@ -85,7 +84,7 @@ class GetQuoteController extends Controller
     public function destroy($id)
     {
         GetQuote::findOrFail($id)->delete();
-        Toastr::success('Data has been successfully Deleted', 'Success');
+        notify()->success("Delete","Quote Successfully Deleted");
         return \redirect()->back();
     }
 }

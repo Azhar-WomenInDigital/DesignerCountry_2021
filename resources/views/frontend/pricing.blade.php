@@ -1,5 +1,10 @@
 @extends ('layouts.frontend.master')
-@section ('page-title', 'Clipping Path Cut Out Services | Designer Country')
+@section ('page-title', 'Photo Retouching & Cut Out Services  Price | Starting at $0.39/Image')
+@push('og-graph-tag')
+<meta property="og:title" content="Photo Retouching & Cut Out Services  Price | Starting at $0.39/Image" />
+<meta property="og:description" content="Clipping Path Cut Out Services | Designer Country" />
+<meta property="og:image" content="https://designercountry.com/assets/frontend/img/pricing/Clipping-Path.png" />
+@endpush
 @push ('page-css')
 <style type="text/css">
 </style>
@@ -40,7 +45,7 @@
             <span class="price-tag">Cliping Path <strong>$0.39</strong></span>
             <img src="{{asset('assets/frontend/img/pricing/Clipping-Path.png')}}" alt="" class="img-fluid">
             <div class="custom_button text-center pt-col-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5">
-              <a href="http://127.0.0.1:8000/get-quote" class="btn btn text-uppercase">get quote</a>
+              <a href="https://www.designercountry.com/get-quote" class="btn btn text-uppercase">get quote</a>
             </div>
           </div>
         </div>
@@ -50,7 +55,7 @@
             <span class="price-tag">Background Removal <strong>$0.39</strong></span>
             <img src="{{asset('assets/frontend/img/pricing/Background-removal.png')}}" alt="" class="img-fluid">
             <div class="custom_button text-center pt-col-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5">
-              <a href="http://127.0.0.1:8000/get-quote" class="btn btn text-uppercase">get quote</a>
+              <a href="https://www.designercountry.com/get-quote" class="btn btn text-uppercase">get quote</a>
             </div>
           </div>
         </div>
@@ -60,7 +65,7 @@
             <span class="price-tag">Image Masking <strong>$1.50</strong></span>
             <img src="{{asset('assets/frontend/img/pricing/Image-masking.png')}}" alt="" class="img-fluid">
             <div class="custom_button text-center pt-col-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5">
-              <a href="http://127.0.0.1:8000/get-quote" class="btn btn text-uppercase">get quote</a>
+              <a href="https://www.designercountry.com/get-quote" class="btn btn text-uppercase">get quote</a>
             </div>
           </div>
         </div>
@@ -70,7 +75,7 @@
             <span class="price-tag">Ghost Mannequin <strong>$1.45</strong></span>
             <img src="{{asset('assets/frontend/img/pricing/Manipulation_4.png')}}" alt="" class="img-fluid">
             <div class="custom_button text-center pt-col-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5">
-              <a href="http://127.0.0.1:8000/get-quote" class="btn btn text-uppercase">get quote</a>
+              <a href="https://www.designercountry.com/get-quote" class="btn btn text-uppercase">get quote</a>
             </div>
           </div>
         </div>
@@ -80,7 +85,7 @@
             <span class="price-tag">Drop Shodow <strong>$0.49</strong></span>
             <img src="{{asset('assets/frontend/img/pricing/Drop-shadow.png')}}" alt="" class="img-fluid">
             <div class="custom_button text-center pt-col-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5">
-              <a href="http://127.0.0.1:8000/get-quote" class="btn btn text-uppercase">get quote</a>
+              <a href="https://www.designercountry.com/get-quote" class="btn btn text-uppercase">get quote</a>
             </div>
           </div>
         </div>
@@ -90,7 +95,7 @@
             <span class="price-tag">Photo Retouching <strong>$1.65</strong></span>
             <img src="{{asset('assets/frontend/img/pricing/Photo-retouching.png')}}" alt="" class="img-fluid">
             <div class="custom_button text-center pt-col-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5">
-              <a href="http://127.0.0.1:8000/get-quote" class="btn btn text-uppercase">get quote</a>
+              <a href="https://www.designercountry.com/get-quote" class="btn btn text-uppercase">get quote</a>
             </div>
           </div>
         </div>
@@ -100,7 +105,7 @@
             <span class="price-tag">Color Variants <strong>$1.50</strong></span>
             <img src="{{asset('assets/frontend/img/pricing/Color-variants.png')}}" alt="" class="img-fluid">
             <div class="custom_button text-center pt-col-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5">
-              <a href="http://127.0.0.1:8000/get-quote" class="btn btn text-uppercase">get quote</a>
+              <a href="https://www.designercountry.com/get-quote" class="btn btn text-uppercase">get quote</a>
             </div>
           </div>
         </div>
@@ -110,7 +115,7 @@
             <span class="price-tag">Product Photo Editing <strong>$1.39</strong></span>
             <img src="{{asset('assets/frontend/img/pricing/Product-photo-editing.png')}}" alt="" class="img-fluid">
             <div class="custom_button text-center pt-col-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5">
-              <a href="http://127.0.0.1:8000/get-quote" class="btn btn text-uppercase">get quote</a>
+              <a href="https://www.designercountry.com/get-quote" class="btn btn text-uppercase">get quote</a>
             </div>
           </div>
         </div>
@@ -120,7 +125,7 @@
             <span class="price-tag">Vactor Conversion <strong>$4.99</strong></span>
             <img src="{{asset('assets/frontend/img/pricing/Vector-conversion.png')}}" alt="" class="img-fluid">
             <div class="custom_button text-center pt-col-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5">
-              <a href="http://127.0.0.1:8000/get-quote" class="btn btn text-uppercase">get quote</a>
+              <a href="https://www.designercountry.com/get-quote" class="btn btn text-uppercase">get quote</a>
             </div>
           </div>
         </div>
@@ -153,7 +158,7 @@
                   <li class="list-group-item py-sm-3"><strong>1.00</strong> per Credit</li>
                   <li class="list-group-item py-sm-3"><strong>0</strong> Free Edit Credits</li>
                   <li class="list-group-item py-sm-3 text-light" style="background-color: #009B97;">
-                      <a class="text-light" href="{{route('get.quote')}}" rel="preload"><b>ORDER NOW</b></a>
+                      <a class="text-light" href="https://www.designercountry.com/get-quote" rel="preload"><b>ORDER NOW</b></a>
                   </li>
               </ul>
           </div>
@@ -196,7 +201,7 @@
       <p class="text-center mobile-pr mobile-pl">We have a big discount for bulk photo processing, you first get discount for editing
           100 files by ourselves, this process goes on a clipping path & shadow creation to get a real view.</p>
       <div class="custom_button text-center">
-          <a href="{{route('get.quote')}}" class="btn btn text-uppercase" rel="preload">get your quote</a>
+          <a href="https://www.designercountry.com/get-quote" class="btn btn text-uppercase" rel="preload">get your quote</a>
        </div>
   </div>
 </section>

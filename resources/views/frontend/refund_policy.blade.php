@@ -1,5 +1,10 @@
 @extends ('layouts.frontend.master')
 @section ('page-title', 'Designer Country Refund-Policy | Product Photo Editing Services')
+@push('og-graph-tag')
+<meta property="og:title" content="Designer Country | Home-Page" />
+<meta property="og:description" content="DC- Perfect High-quality, professional clipping paths and image-editing services, Image masking, color correction, Photo Retouching, Removal Background, Get a quote for your next project." />
+<meta property="og:image" content="https://designercountry.com/assets/frontend/img/hero-img_1.png" />
+@endpush
 @push('page-css')
 <style type="text/css">
 </style>

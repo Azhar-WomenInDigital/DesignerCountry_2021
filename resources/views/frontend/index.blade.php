@@ -1,28 +1,38 @@
 @extends ('layouts.frontend.master')
-@section ('page-title', 'Clipping Path Cut Out Services provider Background Change Image Editing Services')
+@section ('page-title', 'Clipping Path Cut Out Services Provider | Image & Photo Editing')
+@push('og-graph-tag')
+<meta property="og:title" content="Clipping Path Cut Out Services Provider | Image & Photo Editing" />
+<meta property="og:description" content="DC- Perfect High-quality, professional clipping paths and image-editing services, Image masking, color correction, Photo Retouching, Removal Background, Get a quote for your next project." />
+<meta property="og:image" content="https://designercountry.com/assets/frontend/img/hero-img_1.png" />
+<meta name="google-site-verification" content="Wf1tiOhnwW6bBUkA_ELmHNwrWL-UAP095Owc5aH4afI" />
+@endpush
 @push('page-css')
 <style type="text/css">
 .common-page-style{
   padding-top: 0px !important;
 }
+
 </style>  
 @endpush
 @section('page-content')
+<a href="https://api.whatsapp.com/send?phone=+8801914106753&text=Hi There! I'm looking for someone at Designer Country" class="float" target="_blank">
+<i class="fab fa-whatsapp my-float"></i>
+</a>
   <!-- Hero Section Start-->
   <section id="hero" class="d-flex align-items-center">
     <div class="container mobilb-pb-20">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0">
-          <h1>Welcome to Designer Country</h1>
-          <h2>Clipping Path & Photo Retouching Services, Online Support for Every Time!
+        <div class="hero-content col-md-6 pt-4 pt-lg-0">
+          <h1>Professional Product & Photo Editing Services</h1>
+          <h2>Perfect Clipping Path & Photoshop Services, Start $0.39 Per Photo, Online Support for Every Time!
           </h2>
           <div class="d-lg-flex">
             <a href="{{ route('get.quote') }}" class="btn-get-started scrollto" rel="preload">Get Started</a>
             <a href="https://youtu.be/aSW6xUAMi7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true" rel="preload"> Watch Video <i class="icofont-play-alt-2"></i></a>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img mobile-mt-20 mobile-pt-20">
-          <img src="{{ asset('assets/frontend/img/hero-img.png') }}" class="img-fluid animated" alt="banner" loading="lazy">
+        <div class="col-md-6 order-1 order-lg-2 hero-img mobile-mt-20 mobile-pt-20">
+          <img src="{{ asset('assets/frontend/img/hero-img_1.png') }}" class="img-fluid animated" alt="banner" loading="lazy">
         </div>
       </div>
     </div>
@@ -166,7 +176,7 @@
                 <label for="sellection" class="pb-1 pb-sm-2 pb-md-3 mobile-pt-10">
                   <strong>Select Category:</strong>
                 </label>
-                <select class="form-control" id="sellection" name="category">
+                <select class="form-control @error ('category') is-invalid @enderror" id="sellection" name="category" required>
                     <option disabled selected>Select Category</option>
                     <option value="Clipping Path">Clipping Path</option>
                     <option value="Background Removal">Background Removal</option>
@@ -178,12 +188,22 @@
                     <option value="Color Correction">Color Correction</option>
                     <option value="Vector Correction">Vector Correction</option>
                 </select>
+                @error('category')
+                <span class="invalid-feedback" role="alert">
+                  <strong>{{ $message }}</strong>
+                </span>
+                @enderror
               </div>
             </div>
             <div class="col-sm-6 col-md-4 pt-col-3 pt-sm-3 pt-md-4">
               <div class="email-section form-group">
                 <label for="email" class="pb-1 pb-sm-2 pb-md-3 mobile-pt-10"><strong>Email Address:</strong></label>
-                <input type="email" class="form-control" id="email" name="email">
+                <input type="email" class="form-control @error ('email') is-invalid @enderror" id="email" name="email" required>
+                @error('email')
+                <span class="invalid-feedback" role="alert">
+                  <strong>{{ $message }}</strong>
+                </span>
+                @enderror
               </div>
             </div>
           </div>
@@ -294,19 +314,3 @@
 @endsection
 @push('page-js')
 @endpush
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API = Tawk_API || {},
-    Tawk_LoadStart = new Date();
-  (function() {
-    var s1 = document.createElement("script"),
-      s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/5c1d435a82491369ba9f20ac/default';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-  })();
-</script>
-<!--End of Tawk.to Script-->
-    

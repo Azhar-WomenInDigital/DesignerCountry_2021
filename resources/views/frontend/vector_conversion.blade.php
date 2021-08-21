@@ -1,5 +1,10 @@
 @extends ('layouts.frontend.master')
 @section ('page-title', 'Raster to Vector Conversion | Designer Country Services')
+@push('og-graph-tag')
+<meta property="og:title" content="Designer Country | Vector Conversion" />
+<meta property="og:description" content="Raster to Vector Conversion | Designer Country Services" />
+<meta property="og:image" content="https://designercountry.com/assets/frontend/img/Service_All/Vector_Conversion_Service/Vector_Conversion_Service.png" />
+@endpush
 @push('page-css')
 <style type="text/css">
 </style>
@@ -9,12 +14,12 @@
 <section class="mobile-common-page">
     <div class="container py-col-2 py-sm-3 py-md-4 py-lg-5 py-xl-5">
         <div class="head pt-col-1 pt-sm-2 pt-md-2 pt-lg-3 pt-xl-3">
-            <h1 class="pb-col-2 pb-sm-3 pb-md-4 pb-lg-5 pb-xl-5 mobile-pb-10 text-center">Vactor Conversion Service</h1>
+            <h1 class="pb-col-2 pb-sm-3 pb-md-4 pb-lg-5 pb-xl-5 mobile-pb-10 text-center">Vector Conversion Services</h1>
             <div class="box" style="box-shadow: 0 20px 80px -20px rgba(0,0,0,0.38);">
                 <img src="{{asset('assets/frontend/img/Service_All/Vector_Conversion_Service/Vector_Conversion_Service.png')}}"
                     alt="Vactor_Conversion_Service" class="img-fluid" loading="lazy" style="width: 100%;">
                 <div class="custom_button py-col-2 py-sm-3 py-md-4 py-lg-5 py-xl-5 text-center">
-                    <a href="{{route('get.quote')}}" class="btn btn text-uppercase" rel="preload">compleate my quote</a>
+                    <a href="{{route('get.quote')}}" class="btn btn text-uppercase" rel="preload">complete my quote</a>
                 </div>
             </div>
         </div>

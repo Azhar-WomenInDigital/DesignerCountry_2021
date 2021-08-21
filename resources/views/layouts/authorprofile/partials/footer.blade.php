@@ -4,9 +4,6 @@
       <a href="{{ route('index') }}">Home</a>
     </li>
     <li>
-      <a href="{{ route('blog') }}" target="blank">Blog</a>
-    </li>
-    <li>
       <a href="{{ route('terms.and.conditions') }}">Terms & Condition</a>
     </li>
     <li>

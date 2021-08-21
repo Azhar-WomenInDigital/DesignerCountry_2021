@@ -5,7 +5,6 @@ namespace App\Http\Controllers\admin;
 use App\Models\Subscriber;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Brian2694\Toastr\Facades\Toastr;
 
 class SubscribersController extends Controller
 {
@@ -85,7 +84,7 @@ class SubscribersController extends Controller
     public function destroy($id)
     {
         Subscriber::find($id)->delete();
-        Toastr::success('Subscriber has been successfully deleted','Success');
+        notify()->success("Delete","Subscribe Successfully Deleted");
         return \redirect()->back();
     }
 }

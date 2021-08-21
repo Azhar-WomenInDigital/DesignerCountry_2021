@@ -28,6 +28,13 @@ px      68    160    252    344    436    528    620    712    */
     .team .member {
         height: auto;
     }
+    .google-map{
+        width: 100%;
+        height: 400px;
+    }
+    #hero h1 {
+        font-size: 35px;
+    }
 }
 /*	Tablet Layout: 768px.
     Gutters: 24px.
@@ -42,6 +49,17 @@ px      68    160    252    344    436    528    620    712    */
         height: 100vh;
         text-align: center;
     }
+    #hero h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    #hero h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    #hero .hero-content{
+        text-align: left;
+    }
     #hero .animated {
         -webkit-animation: none;
         animation: none;
@@ -50,7 +68,7 @@ px      68    160    252    344    436    528    620    712    */
         text-align: center;
     }
     #hero .hero-img img {
-        width: 50%;
+        width: 100%;
     }
     /* End Banner  */
     /* Cta */
@@ -83,6 +101,14 @@ px      68    160    252    344    436    528    620    712    */
     /* Sample Page */
     .sample-head h2 {
         max-width: 800px;
+    }
+    /* Contact */
+    .contact .info h4 {
+        font-size: 18px;
+    }
+    .google-map{
+        width: 100%;
+        height: auto;
     }
     /* End Sample Page */
 }
@@ -120,8 +146,8 @@ px      68    160    252    344    436    */
     }
     /* Get Started */
     .get-started-btn {
-        margin: 0 48px 0 0;
-        padding: 6px 20px 7px 20px;
+        margin: 0px 20px 0px 0px;
+        padding: 6px 16px 5px 16px;
     }
     /* Banner */
     #hero h1 {
@@ -131,10 +157,18 @@ px      68    160    252    344    436    */
     #hero h2 {
         font-size: 18px;
         line-height: 24px;
+        margin-bottom: 15px;
+    }
+    #hero {
+        height: auto;
+    }
+    #hero .hero-img{
+        margin-top: 30px;
         margin-bottom: 30px;
+        text-align: center;
     }
     #hero .hero-img img {
-        width: 70%;
+        width: 100%;
     }
     /* End Banner */
     /* End Base Css */
@@ -185,6 +219,13 @@ px      68    160    252    344    436    */
     /* End Sample Page */
     .mobile-common-page {
         padding-top: 40px;
+    }
+    .contact .info {
+        margin-bottom: 30px;
+    }
+    .google-map{
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -265,6 +306,12 @@ px      68    160    252    344    436    */
     * Index Page Css
     *------------------------------------------------------------*/
     /* Banner */
+    #hero h2 {
+        margin-bottom: 15px;
+    }
+    #hero h1 {
+        font-size: 20px !important;
+    }
     #hero .hero-img img {
         width: 80%;
     }
@@ -296,6 +343,7 @@ px      68    160    252    344    436    */
     #hero {
         height: auto;
         text-align: center;
+        padding-bottom: 30px;
     }
     .custom_button {
         padding: 15px 0px;
@@ -399,6 +447,13 @@ px      68    160    252    344    436    */
     .blog-card {
         height: auto;
     }
+    .contact .info {
+        margin-bottom: 20px;
+    }
+    .google-map{
+        width: 100%;
+        height: auto;
+    }
     /* End Blog Css */
 }
 
@@ -490,12 +545,23 @@ px      68    160    252    344    436    */
         top: 26px;
         right: 10px;
     }
+    #hero h1{
+        line-height: 40px;
+    }
+    #hero h2 {
+        margin-bottom: 0px;
+    }
+    #hero .btn-get-started {
+        padding: 5px 5px 5px 5px;
+        border-radius: 5px;
+    }
     #header .logo {
         padding-left: 8px;
     }
     #hero {
-        height: 90vh;
+        height: auto;
         text-align: center;
+        padding-bottom: 30px;
     }
     .custom_button {
         padding: 15px 0px;
@@ -658,4 +724,27 @@ px      68    160    252    344    436    */
         height: auto;
     }
     /* End Blog Css */
+    
+     /* About Page Team */
+    .team .member .member-info {
+        padding-left: 0px;
+        width: 100%;
+    }
+    .team .member h4 {
+        text-align: center;
+    }
+    .team .member span {
+        text-align: center;
+    }
+    .team .member span::after {
+        display: none;
+    }
+    .contact .info {
+        margin-bottom: 20px;
+    }
+    .google-map{
+        width: 100%;
+        height: auto;
+    }
+    /* End About Page Team */
 }
